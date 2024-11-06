@@ -1,0 +1,101 @@
+body {
+    background-color: #f0f0f0; /* Un fondo más suave */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .calculadora {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #e6e6e6, #d9d9d9); /* Degradado sutil */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #pantalla {
+    width: calc(100% - 20px); /* Ajustar al padding */
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco para la pantalla */
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interior */
+  }
+  
+  .botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333333; /* Color de texto más oscuro */
+    cursor: pointer;
+    transition: all 0.2s ease; /* Transición suave para hover */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .operador {
+    background-color: #ff9900;
+    color: white;
+  }
+  
+  .operador:hover {
+    background-color: #e68a00;
+  }
+  
+  #igual {
+    background-color: #00cc00;
+    color: white;
+  }
+  
+  #igual:hover {
+    background-color: #00b300;
+  }
+  
+  #borrar {
+    background-color: #ff3333;
+    color: white;
+  }
+  
+  #borrar:hover {
+    background-color: #e62e2e;
+  }
+  /* ... (código CSS anterior) ... */
+
+#pantalla.animacion {
+    animation: parpadeo 0.2s ease; /* Ajustar la animación */
+  }
+  
+  @keyframes parpadeo {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+  button:nth-child(1), button:nth-child(2), button:nth-child(3) {
+    background-color: #a6a6a6; 
+    color: white;
+  }
+  
+  button:nth-child(1):hover, button:nth-child(2):hover, button:nth-child(3):hover {
+    background-color: #999999;
+  }
+  
